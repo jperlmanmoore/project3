@@ -62,7 +62,6 @@ class SignupPage extends Component {
         // can change this to look however it needs to look
         return (
             <div>
-                {/* <NavBar></NavBar>
                 <form>
                     <Input
                         value={this.state.username}
@@ -101,8 +100,8 @@ class SignupPage extends Component {
                         Submit
                         </FormBtn>
                 </form>
-                <Footer></Footer> */}
-                <SignupForm />
+                <Footer></Footer>
+                {/* <SignupForm /> */}
             </div>
         )
     }

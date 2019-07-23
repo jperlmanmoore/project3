@@ -8,9 +8,9 @@
 }
 
 .App-header {
-  background-color: black;
-  height: 120px;
-  padding: 20px;
+  background-color: rgba(53, 49, 49, 0.5);
+  height: 180px;
+  padding: 30px;
   color: white;
 }
 

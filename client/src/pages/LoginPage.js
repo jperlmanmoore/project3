@@ -5,6 +5,7 @@ import axios from "axios";
 import BananaLogo from "../components/BananaLogo";
 import Form from "../components/LForm";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 
 class LoginPage extends Component {
@@ -66,14 +67,14 @@ class LoginPage extends Component {
           // can change this to look however it needs to look
           return (
               <div>
-                <NavBar/>
                 <BananaLogo />
-                {/* <form>
+                <form>
+                <small id="emailHelp" class="form-text text-muted">Already have a account? Login here.</small>
               <Input
                 value={this.state.username}
                 onChange={this.handleChange.bind(this)}
                 name="username"
-                placeholder="username (required)"
+                placeholder="username (required)"   
               />
               <Input
                 value={this.state.password}
@@ -81,14 +82,18 @@ class LoginPage extends Component {
                 name="password"
                 placeholder="password (required)"
               />
+              
+  
               <FormBtn
                 // disabled={!(this.state.username && this.state.password)}
                 onClick={this.handleSubmit}
               >
                 Submit
               </FormBtn>
-            </form> */}
-            <Form />
+            </form>
+            {/* <Form /> */}
+
+            <Footer></Footer>
               </div>
           )
       }

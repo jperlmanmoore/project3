@@ -1,0 +1,36 @@
+body{
+    background:
+    url('001.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+
+  
+    background-size:cover;
+
+   font-family: 'Righteous', cursive;
+   /* font-family: 'Literata', serif; */
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+   }
+
+
+Form {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    /* background-color: blanchedalmond; */
+    background-color:rgba(255,255,255,0.7);/*背景颜色白色，50%透明度*/
+    padding: 20px;
+  }
+  
+  /* .form input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+  } */
+
