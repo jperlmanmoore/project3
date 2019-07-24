@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+// eslint-disable-next-line
 import { Input, FormBtn } from "../components/Loginform/index";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
 import BananaLogo from "../components/BananaLogo";
-import Form from "../components/LForm";
-import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+
+// eslint-disable-next-line
+import NavBar from "../components/NavBar";
 
 
 class LoginPage extends Component {
@@ -68,6 +70,7 @@ class LoginPage extends Component {
           return (
               <div>
                 <BananaLogo />
+               
                 <form>
                 <small id="emailHelp" class="form-text text-muted">Already have a account? Login here.</small>
               <Input
@@ -82,16 +85,18 @@ class LoginPage extends Component {
                 name="password"
                 placeholder="password (required)"
               />
-              
-  
+             
+
+             <div>
               <FormBtn
                 // disabled={!(this.state.username && this.state.password)}
                 onClick={this.handleSubmit}
               >
                 Submit
               </FormBtn>
+              </div>
             </form>
-            {/* <Form /> */}
+           
 
             <Footer></Footer>
               </div>

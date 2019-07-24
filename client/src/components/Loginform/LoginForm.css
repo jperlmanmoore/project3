@@ -1,0 +1,31 @@
+body{
+    background:
+    url('../LForm/001.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+    
+    
+    background-size:cover;
+    
+    font-family: 'Righteous', cursive;
+    /* font-family: 'Literata', serif; */
+    
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+   }
+
+
+div form { text-align: center;
+    margin: 10% 30% 5% 30% ;
+    /* background-color: blanchedalmond; */
+    background-color:rgba(255,255,255,0.7);/*背景颜色白色，50%透明度*/
+    padding: 40px;
+
+}
+button {
+    margin: 5% auto auto auto;
+    padding:10px;
+}
