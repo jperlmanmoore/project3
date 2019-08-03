@@ -47,19 +47,19 @@ class IdiomSearchPage extends Component {
       console.log("new")
         //get idiom
         const result = response.data
-        console.log(result)
+        // console.log(result)
 
 
         //const filterIdioms = result.idioms.filter(s => s.idiom === searchIdiom);
         const filterIdioms = result.filter(s => s.idiom === searchIdiom);
         //const filterIdioms = result.idioms;
 
-        console.log(filterIdioms);
+        // console.log(filterIdioms);
 
         const idioms = filterIdioms.map(idioms=>{
             return{idiom:idioms.idiom, meaning:idioms.meaning}
         })
-        console.log(idioms)
+        // console.log(idioms)
         resolve(idioms);
 
     })

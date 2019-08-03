@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const languagesSchema = new Schema({
   language: { type: String, required: true, unique: true, trim: true },
-  languageCode: {type: String, required: true, unique: true, trim: true}
+  language_code: {type: String, required: true, unique: true, trim: true}
 
 });
 

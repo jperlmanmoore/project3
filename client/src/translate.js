@@ -14,14 +14,15 @@ if (!subscriptionKey) {
 
 /* If you encounter any issues with the base_url or path, make sure that you are
 using the latest endpoint: https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate */
-function translateText(){
+export default function translateText(elem){
+var languageCode = document.getElementsByTagName("BUTTON")
     let options = {
         method: 'POST',
         baseUrl: 'https://api.cognitive.microsofttranslator.com/',
         url: 'translate',
         qs: {
           'api-version': '3.0',
-          'to': ['zh-Hans']
+          'to': 'es'
         },
         headers: {
           'Ocp-Apim-Subscription-Key': subscriptionKey,

@@ -3,7 +3,7 @@
  import propTypes from "prop-types"
  import "./Searchresult.css"
  import LanguageButton from"../LanguageButton"
-//  import TranslatedDescription from "../TranslatedDescription"
+ import TranslatedDescription from "../TranslatedDescription"
  
  export default class SearchResult extends Component{
  
@@ -57,7 +57,7 @@
                        <LanguageButton />
                        <button href="#" className="btn bg-warning text-dark">Go Translate !</button>
                        <button className="btn bg-warning text-dark"><i className="far fa-heart"></i></button>
-                       {/* <TranslatedDescription /> */}
+                       <TranslatedDescription />
                      </div>
                    </div> 
                    ) )
