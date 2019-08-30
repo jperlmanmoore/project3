@@ -17,28 +17,21 @@ module.exports = {
     console.log("login route");
     passport.authenticate('local-login', { session: false }, (err, username, info) => {
       console.log("passport local-login")
-      if (err) { console.log(err) };
-
-      if (!username) {
-        return res.status(200).send({
-          auth: false,
-          message: "not a user"
-        })
-      }
-
-      if (info) {
+      if (err) { console.log(err) }
+      else if (info) {
         console.log(info.message);
         // return res.send(info.message);
         // based off of freecodecamp example
         const payload = {
           username: username,
         };
-        console.log({ username: username })
+        console.log(123)
 
         req.logIn(payload, { session: false }, (error => {
           if (error) {
             res.status(400).send({ error });
           }
+
           const stuffInsideToken = ({ id: users.username });
           const token = jwt.sign(stuffInsideToken, keys.secret)
           res.cookie('jwt', token, { httpOnly: true, secure: true });
