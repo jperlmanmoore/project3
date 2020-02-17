@@ -16,7 +16,7 @@ This will help non-English speakers learn idioms, which are very hard to learn.
 
 * Hilary - Front-end - page functions: translations,language selection menu, etc;
 * Maya - Front-end - All UX/UI, idiom search, saved idioms(unfinished);
-* Jennifer -Back-end/ - authentication(passport/bcrypt/json webtokens), routes, controllers, mongodb setup, dockerize app, amazon web services.
+* Jennifer -Front-end - signin and signup pages & Back-end/ - authentication(passport/bcrypt/json webtokens), routes, controllers, mongodb setup, dockerize app, amazon web services.
 
 ![readmeImage](client/src/images/readme006.png)
 
